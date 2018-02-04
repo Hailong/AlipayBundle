@@ -1,0 +1,27 @@
+{
+    "name": "orinoco/alipay-bundle",
+    "description": "Symfony bundle wrapper for Alipay SDK and demo library. 把阿里支付 SDK 和 demo 库包装为 Symfony Bundle.",
+    "type": "symfony-bundle",
+    "keywords": ["symfony", "alipay", "sdk"],
+    "license": "MIT",
+    "homepage": "https://github.com/Hailong/AlipayBundle",
+    "authors": [
+        {
+            "name": "Hailong Zhao",
+            "email": "hailongzh@hotmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "Orinoco\\AlipayBundle\\": "AlipayBundle"
+        },
+        "classmap": [
+            "AlipaySDK/alipay-sdk-PHP-20180104135052/aop/",
+            "AlipaySDK/alipay.trade.page.pay-PHP-UTF-8/pagepay/buildermodel/",
+            "AlipaySDK/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php",
+            "AlipaySDK/alipay.trade.wap.pay-PHP-UTF-8/wappay/buildermodel/",
+            "AlipaySDK/alipay.trade.wap.pay-PHP-UTF-8/wappay/service/AlipayTradeService.php"
+        ]
+    },
+    "require": {}
+}
